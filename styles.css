@@ -11,6 +11,7 @@
 
 :root {
   --ps-blanc: #fafafa;
+  --ps-blanc2: #f8f8f8;
   --ps-rose: #ff6e81;
   --ps-orange: #f69d33;
   --ps-mauve: #cc9ad0;
@@ -28,7 +29,7 @@ html {
 }
 
 body {
-  background-color: #f8f8f8;
+  background-color: var(--ps-blanc2);
 }
 
 ::selection {
@@ -217,7 +218,7 @@ body {
 
 footer {
   width: 100%;
-  background-color: var(--ps-blanc);
+  background-color: var(--ps-blanc2);
   color: var(--ps-mauve);
   font-size: 10px;
   font-weight: bold;
