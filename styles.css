@@ -275,7 +275,7 @@ footer {
 .message-container {
     max-height: calc(100vh - 90px - 38px);
     min-height: calc(100vh - 90px - 38px);
-    padding-bottom: 65px;
+    padding-bottom: 55px;
     border-radius: 0;
     overflow: auto;
 }
