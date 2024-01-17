@@ -55,7 +55,7 @@ body {
   border-left: 1px solid var(--ps-gris);
   border-right: 1px solid var(--ps-gris);
   border-bottom: 1px solid var(--ps-gris);
-  background-image: url(./images/pattern.jpg);
+  background-image: url(../images/pattern.jpg);
   box-shadow: inset 0 5px 5px -5px var(--ps-noir);
   height: 650px;
   overflow: auto;
