@@ -19,7 +19,7 @@
   --ps-noir2: #333;
   --ps-bleu: #007bff;
   --ps-bleu2: #87CEEB;
-  --ps-bleu3: #87CEEB;
+  --ps-bleu3: #006fe7;
   --ps-vert: #9edd5f;
   --ps-gris: #919191;
   --ps-gris2: #adb5bd;
@@ -62,20 +62,19 @@ body {
 }
 
 .titre {
-  display: flex;
+    display: flex;
+    flex-direction: column;
 }
 
 .topic-titre {
-  background-color: var(--ps-bleu2);
+  background-color: var(--ps-bleu3);
+  border-radius: 6px 6px 0px 0px;
 }
 
 .topic-infos {
-      display: flex;
-    border-left: 1px solid var(--ps-gris);
-    border-right: 1px solid var(--ps-gris);
-    border-top: 1px solid var(--ps-gris);
+    display: flex;
     max-width: 600px;
-    background: var(--ps-bleu3);
+    background: var(--ps-bleu);
     color: white;
     padding: 1rem 1rem;
     position: relative;
@@ -273,12 +272,12 @@ footer {
   }
 
   .titre {
-    height: 90px;
+    height: 110px;
   }
 
 .message-container {
-    max-height: calc(100vh - 90px - 38px);
-    min-height: calc(100vh - 90px - 38px);
+    max-height: calc(100vh - 110px - 38px);
+    min-height: calc(100vh - 110px - 38px);
     padding-bottom: 55px;
     border-radius: 0;
     overflow: auto;
