@@ -153,16 +153,16 @@ body {
 }
 
 .avatar {
-  min-width: 35px;
-  min-height: 35px;
-  border-radius: 50%;
-  margin-right: 12px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  object-fit: cover;
-  cursor: default;
-  border: 1px solid var(--ps-gris2);
+    min-width: 65px;
+    min-height: 65px;
+    border-radius: 50%;
+    margin-right: 12px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    cursor: default;
+    border: 1px solid var(--ps-gris2);
 }
 
 .content {
@@ -247,6 +247,19 @@ footer {
   body {
     font-size: 0.8rem !important;
   }
+
+  .avatar {
+  min-width: 35px;
+  min-height: 35px;
+  border-radius: 50%;
+  margin-right: 12px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  cursor: default;
+  border: 1px solid var(--ps-gris2);
+}
 
   .container {
     max-width: 100%;
