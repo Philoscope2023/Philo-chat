@@ -179,11 +179,11 @@ body {
 }
 
 #socrate-avatar {
-  background-image: url('Socrate.png');
+  background-image: url('images/socrate.png');
 }
 
 #aristote-avatar {
-  background-image: url('Aristote.png');
+  background-image: url('images/aristote.png');
 }
 
 .socrate-bulle {
