@@ -36,11 +36,11 @@ body {
 }
 
 .h1, h1 {
-  font-size: 1.5em;
-  cursor: default !important;
-  margin: 1.5rem auto !important;
-  text-align: center !important;
-  color: var(--ps-noir2) !important;
+    font-size: 0.9em;
+    cursor: default !important;
+    margin: 0.5rem auto !important;
+    text-align: center !important;
+    color: var(--ps-blanc) !important;
 }
 
 .container {
@@ -67,8 +67,9 @@ body {
 }
 
 .topic-titre {
-  background-color: var(--ps-bleu3);
-  border-radius: 6px 6px 0px 0px;
+    background-color: var(--ps-bleu3);
+    border-radius: 6px 6px 0px 0px;
+    height: 35px;
 }
 
 .topic-infos {
@@ -84,7 +85,7 @@ body {
     flex-wrap: nowrap;
     flex-direction: row;
     cursor: default;
-    border-radius: 6px 6px 0px 0px;
+    box-shadow: inset 0 5px 5px -5px var(--ps-noir2);
 }
 
 #infos {
@@ -272,12 +273,12 @@ footer {
   }
 
   .titre {
-    height: 110px;
+    height: 115px;
   }
 
 .message-container {
-    max-height: calc(100vh - 110px - 38px);
-    min-height: calc(100vh - 110px - 38px);
+    max-height: calc(100vh - 115px - 38px);
+    min-height: calc(100vh - 115px - 38px);
     padding-bottom: 55px;
     border-radius: 0;
     overflow: auto;
