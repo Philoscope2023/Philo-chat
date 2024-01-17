@@ -85,7 +85,7 @@ body {
     flex-wrap: nowrap;
     flex-direction: row;
     cursor: default;
-    box-shadow: inset 0 5px 5px -5px var(--ps-noir2);
+    box-shadow: inset 0 5px 5px -5px #0052aa;
 }
 
 #infos {
