@@ -90,10 +90,10 @@ body {
 }
 
 .bi-arrow-left-short::before {
-  content: "\f12c";
-  font-size: 20px !important;
-  margin-right: 7px !important;
-  vertical-align: middle !important;
+   content: "\f12c";
+   font-size: 25px !important;
+   margin-right: 4px !important;
+   vertical-align: middle !important;
 }
 
 #logo {
@@ -204,6 +204,7 @@ body {
 
 .btn-primary {
   width: 100%;
+  margin-top: 20px;
 }
 
 .bulle.socrate-bulle:after {
@@ -272,11 +273,11 @@ footer {
   }
 
 .message-container {
-    max-height: calc(100vh - 90px - 38px); /* Ajustez la hauteur totale de l'écran moins la hauteur du titre et du bouton */
+    max-height: calc(100vh - 90px - 38px);
     min-height: calc(100vh - 90px - 38px);
-    padding-bottom: 60px;
+    padding-bottom: 65px;
     border-radius: 0;
-    overflow: auto; /* Ajoutez cette ligne pour activer le défilement lorsque le contenu dépasse la hauteur maximale */
+    overflow: auto;
 }
 
   h1 {
