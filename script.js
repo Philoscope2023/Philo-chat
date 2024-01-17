@@ -49,16 +49,19 @@ function displayMessage() {
     avatarImg.classList.add('avatar');
     avatarImg.id = `${message.speaker.toLowerCase()}-avatar`;
 
-    const messageTextContainer = document.createElement('div'); // Nouveau conteneur pour le texte et le nom
+    const contentDiv = document.createElement('div');
+    contentDiv.classList.add('content');
+
     const speakerName = document.createElement('span');
     speakerName.classList.add('speaker-name');
     speakerName.textContent = message.speaker;
 
     const messageText = document.createElement('span');
+    messageText.classList.add('message-text');
     messageText.textContent = '';
 
-    messageTextContainer.appendChild(speakerName);
-    messageTextContainer.appendChild(messageText);
+    contentDiv.appendChild(speakerName);
+    contentDiv.appendChild(messageText);
 
     const typingIndicator = document.createElement('span');
     typingIndicator.classList.add('typing-indicator');
@@ -70,11 +73,25 @@ function displayMessage() {
     }
 
     bulle.appendChild(avatarImg);
-    bulle.appendChild(messageTextContainer);
+    bulle.appendChild(contentDiv);
     bulle.appendChild(typingIndicator);
     messageContainer.appendChild(bulle);
 
     messageIndex++;
+
+    const messageLength = message.text.length;
+    const animationDuration = Math.max(1.5, Math.min(6, messageLength / 40)); // Ajustez ces valeurs selon vos préférences
+    const waitTime = animationDuration * 1000;
+
+    bulle.style.opacity = 0;
+    bulle.style.transform = 'translateY(10px)';
+    typingIndicator.style.opacity = 0;
+
+    setTimeout(() => {
+      bulle.style.opacity = 1;
+      bulle.style.transform = 'translateY(0)';
+      typingIndicator.style.opacity = 1;
+    }, 0);
 
     messageContainer.scrollTop = messageContainer.scrollHeight;
 
@@ -82,12 +99,14 @@ function displayMessage() {
       typingIndicator.remove();
       messageText.textContent = message.text;
 
+      messageContainer.scrollTop = messageContainer.scrollHeight;
+
       if (messageIndex === messages.length) {
         startBtn.textContent = "Relancer la discussion";
         isConversationInProgress = false;
       }
-    }, 2000);
+    }, waitTime);
 
-    setTimeout(displayMessage, 3000);
+    setTimeout(displayMessage, waitTime + 1000); // Ajout d'un délai supplémentaire
   }
 }
